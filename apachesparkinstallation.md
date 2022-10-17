@@ -20,15 +20,15 @@ az vm open-port --port 8888 --resource-group agsparkrg --name agsparkVM
 ssh ambarishspark@**YOUR MACHINE PUBLIC IP**
 
 ## Install and Configure Jupyter Notebook            
-sudo apt update
-sudo apt-get install software-properties-common
-sudo add-apt-repository ppa:deadsnakes/ppa
-sudo apt-get update
-sudo apt-get install python3.8
-sudo apt install python3-pip
-pip3 install --upgrade setuptools
-pip3 install jupyter
-export PATH=$PATH:~/.local/bin
+sudo apt update            
+sudo apt-get install software-properties-common         
+sudo add-apt-repository ppa:deadsnakes/ppa         
+sudo apt-get update          
+sudo apt-get install python3.8          
+sudo apt install python3-pip          
+pip3 install --upgrade setuptools          
+pip3 install jupyter           
+export PATH=$PATH:~/.local/bin         
 
 ## Install Apache Spark                  
 wget https://dlcdn.apache.org/spark/spark-3.3.0/spark-3.3.0-bin-hadoop3.tgz
