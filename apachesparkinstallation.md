@@ -31,10 +31,9 @@ pip3 install jupyter
 export PATH=$PATH:~/.local/bin         
 
 ## Install Apache Spark                  
-wget https://dlcdn.apache.org/spark/spark-3.3.0/spark-3.3.0-bin-hadoop3.tgz
-
-tar -xf spark-3.3.0-bin-hadoop3.tgz
-pip3 install pyspark
+wget https://dlcdn.apache.org/spark/spark-3.3.0/spark-3.3.0-bin-hadoop3.tgz      
+tar -xf spark-3.3.0-bin-hadoop3.tgz             
+pip3 install pyspark          
 
 ## Install JDK     
 sudo apt install default-jdk
