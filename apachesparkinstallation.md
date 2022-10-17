@@ -10,14 +10,14 @@ az vm create \
 --resource-group agsparkrg \
 --name agsparkVM \
 --image UbuntuLTS \
---admin-username **USERNAME** \
---admin-password **PASSWORD**
+--admin-username **YOUR USERNAME** \
+--admin-password **YOUR PASSWORD**
 
 ## Open the PORT             
 az vm open-port --port 8888 --resource-group agsparkrg --name agsparkVM
 
 ## ssh into the vm         
-ssh ambarishspark@**MACHINE PUBLIC IP**
+ssh ambarishspark@**YOUR MACHINE PUBLIC IP**
 
 ## Install and Configure Jupyter Notebook            
 sudo apt update
@@ -43,7 +43,7 @@ export JAVA_HOME="/usr/lib/jvm/default-java"
 
 ## Configure to access Jupyter Notebook from remote machine          
 ssh -L 8888:localhost:8888 your_server_username@your_server_ip        
-ssh -L 8888:localhost:8888 ambarishspark@4.246.194.76             
+ssh -L 8888:localhost:8888 ambarishspark@**YOUR MACHINE PUBLIC IP**              
 
 ## Invoke Jupyter Notebook               
 jupyter notebook --no-browser 
